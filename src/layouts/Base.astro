@@ -33,6 +33,9 @@ const v = site.assetVersion;
 
     <link rel="shortcut icon" href="/public/img/logo.svg">
 
+    {/*
+      Google Analytics: disabled for now (see NEXT.md). To re-enable, remove this comment wrapper.
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${site.googleAnalyticsId}`}></script>
     <script is:inline define:vars={{ gaId: site.googleAnalyticsId }}>
@@ -41,6 +44,7 @@ const v = site.assetVersion;
       gtag('js', new Date());
       gtag('config', gaId);
     </script>
+    */}
 
     <meta name="google-site-verification" content={site.googleSiteVerification} />
   </head>
