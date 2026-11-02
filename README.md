@@ -15,6 +15,8 @@ npm run dev      # http://localhost:4321
 npm run build    # → dist/ (upload the contents to the webroot)
 ```
 
+Local (Laravel Herd): https://cribs.ch.test serves `dist/` via `LocalValetDriver.php`, so run `npm run build` to see changes there.
+
 ## Structure
 
 | Path | Purpose |
