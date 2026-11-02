@@ -1,0 +1,4 @@
+# Apache: language-less and legacy URLs → German pages (301, like the old site)
+RewriteEngine On
+RewriteRule ^(en|fr)(/.*)?$ /de$2 [R=301,L]
+ErrorDocument 404 /404.html

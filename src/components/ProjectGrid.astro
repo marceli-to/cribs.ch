@@ -1,0 +1,25 @@
+---
+import grid from '../data/grid.json';
+---
+<div id="projects">
+  <div class="row">
+    {grid.map((item) =>
+      item.spacer ? (
+        <div class={`col-sm-${item.col} project-prev`}></div>
+      ) : (
+        <div class={`col-sm-${item.col} project-prev`} style={`margin-top:${item.marginTop}%`} id={item.slug}>
+          <div class="image-container" onClick={`toUrl('/de/projekte/${item.slug}')`} style="cursor: pointer">
+            {item.preview.type === 'video' ? (
+              <video id={item.preview.id} border="0" class="image-normal" loop muted autoplay playsinline>
+                <source type="video/mp4" src={item.preview.src} />
+              </video>
+            ) : (
+              <img class="image-normal" src={item.preview.src} alt={item.preview.alt} />
+            )}
+          </div>
+          <h4 class="text-link" onClick={`location.href = '/de/projekte/${item.slug}'`}> {item.title} </h4>
+        </div>
+      )
+    )}
+  </div>
+</div>

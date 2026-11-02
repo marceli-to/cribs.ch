@@ -1,0 +1,11 @@
+---
+interface Props {
+  active: 'projects' | 'office';
+}
+const { active } = Astro.props;
+const cls = (key: string) => (active === key ? 'text-link-selected' : 'text-link');
+---
+<div class="view-select text-center" id="scrollto">
+  <h4 class={cls('projects')} style="padding-top: 5px; margin: 10px;" onClick="location.href = '/projekte';" id="select-projects"> Projekte </h4>
+  <h4 class={cls('office')} style="margin: 10px;" onClick="location.href = '/buero';" id="select-office"> Büro </h4>
+</div>

@@ -1,0 +1,12 @@
+---
+import InfoPage from '../components/InfoPage.astro';
+import pages from '../data/pages.json';
+---
+<InfoPage
+  slug=""
+  title="Seite nicht gefunden"
+  description={pages.home.description}
+  keywords={pages.home.keywords}
+  pageId={0}
+  content={`<h2>Seite nicht gefunden</h2><p>Die gewünschte Seite existiert nicht (mehr).</p><p><a href="/de/projekte">Zu den Projekten</a></p>`}
+/>

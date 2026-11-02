@@ -1,0 +1,1078 @@
+/*!
+ * JKweb CSS StartUp
+ *
+ * Copyright 2015 JKweb (Jeremias Kläui, Pascal Josephy)
+ *
+ *
+
+/* tables */
+.table-vcenter td {
+	vertical-align: middle !important;
+}
+
+.table .total > td {
+	border-top: 2px solid #ddd;
+	font-weight: 700;
+}
+
+/* strikethrough */
+.strikethrough {
+	text-decoration: line-through;
+}
+
+/* JKweb Part */
+
+a:active, a:focus {
+	outline: none;
+}
+
+/* Links */
+a {
+	-webkit-transition: all ease 200ms;
+	-moz-transition: all ease 200ms;
+	transition: all ease 200ms;
+}
+
+.btn {
+	-webkit-transition: all ease 100ms;
+	-moz-transition: all ease 100ms;
+	transition: all ease 100ms;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* bootstrap row without padding */
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+/* float clearing for IE6 */
+* html .clearfix {
+	height: 1%;
+	overflow: visible;
+}
+
+/* float clearing for IE7 */
+* + html .clearfix {
+	min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	font-size: 0;
+}
+
+.jkweb .tooltip-container {
+	position: absolute;
+}
+
+.jkweb .inner-tooltip {
+	margin: 5px;
+	border: 1px solid #000;
+	border-radius: 3px;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.jkweb .inner-tooltip {
+	margin: 5px;
+	border: 1px solid #000;
+	border-radius: 3px;
+	background: rgba(0, 0, 0, 1);
+}
+
+.jkweb .inner-tooltip p {
+	color: #fff;
+	font-weight: 100;
+	font-size: 12px;
+	margin: 0;
+	padding: 5px;
+}
+
+.jkweb .tooltip-container.top .tooltip-arrow {
+	bottom: 0;
+	left: 50%;
+	position: absolute;
+	margin-left: -5px;
+	border-top: 5px solid #000;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+
+.jkweb .tooltip-container.left .tooltip-arrow {
+	top: 50%;
+	position: absolute;
+	right: 0;
+	margin-top: -5px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #000;
+}
+
+.jkweb .tooltip-container.bottom .tooltip-arrow {
+	top: 0;
+	position: absolute;
+	left: 50%;
+	margin-left: -5px;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #000;
+	border-left: 5px solid transparent;
+}
+
+.jkweb .tooltip-container.right .tooltip-arrow {
+	top: 50%;
+	position: absolute;
+	left: 0;
+	margin-top: -5px;
+	border-top: 5px solid transparent;
+	border-right: 5px solid #000;
+	border-bottom: 5px solid transparent;
+}
+
+/* Standard layouting */
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+/* Youtube */
+.yt {
+	position: relative;
+}
+
+.yt .play {
+	position: absolute;
+	left: 50%;
+	*background-color: red;
+	width: 70px;
+	height: 70px;
+	top: 50%;
+	margin-top: -35px;
+	margin-left: -35px;
+	-webkit-transition: all 200ms linear;
+	-moz-transition: all 200ms linear;
+	opacity: .8;
+}
+
+.yt .play:hover {
+	opacity: 1;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+}
+
+.yt .play.loading {
+	*background: blue;
+}
+
+.yt img {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.yt iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/* Youtube new */
+
+.yt-thumb {
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.yt-thumb .play {
+	background-image: url(../img/play.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	margin-left: -30px;
+	margin-top: -30px;
+	opacity: 0.7;
+}
+
+.yt-thumb .play:hover {
+	opacity: 1;
+}
+
+/* Gallery
+
+modified 23.10.12 Pascal 
+modified 14.10.13 Pascal
+*/
+
+[class^="gallery-"] {
+	margin: -1%;
+	-webkit-perspective: 800px;
+	-webkit-perspective-origin: 50% 50%;
+}
+
+[class^="gallery-"] .thumbnail {
+	margin: 1%;
+	margin-bottom: 10px;
+	background-color: #000;
+	-webkit-transition: all 100ms linear;
+	position: relative;
+	padding: 0;
+	float: left;
+	border-width: 0;
+}
+
+[class^="gallery-"] .thumbnail img {
+	-webkit-transition: all 100ms linear;
+}
+
+[class^="gallery-"] .thumbnail:hover {
+	*-webkit-transform: rotateX(15deg);
+}
+
+[class^="gallery-"] .thumbnail:hover img {
+	opacity: .7;
+}
+
+[class^="gallery-"]:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	font-size: 0;
+}
+
+.gallery-6 {
+	margin: -.5%;
+}
+
+.gallery-6 .thumbnail {
+	width: 15.666%;
+	margin: .5%;
+}
+
+.gallery-5 .thumbnail {
+	width: 18%;
+}
+
+@media (max-width: 700px) {
+	.gallery-5 .thumbnail, .gallery-6 .thumbnail {
+		width: 23% !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.gallery-4 .thumbnail, .gallery-5 .thumbnail, .gallery-6 .thumbnail {
+		width: 31% !important;
+	}
+}
+
+.gallery-4 .thumbnail {
+	width: 23%;
+}
+
+.gallery-3 .thumbnail {
+	width: 31.333333333333%;
+}
+
+[class^="gallery-"] .thumbnail .img-caption {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font-size: 16px;
+	right: 0px;
+	padding: 0px;
+	text-align: center;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	line-height: 1.2;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.img-caption h1 {
+	font-size: 16px;
+	text-align: center;
+	border: none;
+	color: white;
+	margin-bottom: 0;
+}
+
+[class^="gallery-"] .thumbnail .img-caption i {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+/* Popups customize */
+
+.modal.fade, .modal.fade .modal-content, .modal-backdrop.fade {
+	transition: .3s all cubic-bezier(0.250, 0.460, 0.450, 0.940) !important;
+	-webkit-transition: .3s all cubic-bezier(0.250, 0.460, 0.450, 0.940) !important;
+	-moz-transition: .3s all cubic-bezier(0.250, 0.460, 0.450, 0.940) !important;
+}
+
+.modal.fade {
+	opacity: 1 !important;
+}
+
+.modal .modal-content {
+	-webkit-transform: scale(0.8) translate3d(0, 0, 0);
+	-moz-transform: scale(0.8) translate3d(0, 0, 0);
+	opacity: 0;
+}
+
+.modal .modal-popup {
+	opacity: 1 !important;
+}
+
+@media screen and (min-width: 991px) {
+	.modal {
+		padding-top: 100px;
+	}
+}
+
+.modal.fade.in .modal-content {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+}
+
+.modal-dialog {
+	max-width: 100%;
+}
+
+/* reset bootstrap popup fade effect */
+
+.modal .modal-dialog {
+	-webkit-transform: translate(0, 0) !important;
+	-ms-transform: translate(0, 0) !important;
+	transform: translate(0, 0) !important;
+}
+
+/* image popup */
+.img-popup-body-container {
+	-webkit-transition: .3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	-moz-transition: .3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+
+.img-popup-body-container-showing {
+	opacity: .5;
+	-webkit-transform: scale(1) translate3d(0, 0, 0);
+	-moz-transform: scale(1) translate3d(0, 0, 0);
+}
+
+.img-popup-modal {
+	-webkit-transition: .3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	-moz-transition: .3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	-webkit-transform: scale(0.8) translate3d(0, 0, 0);
+	-moz-transform: scale(0.8) translate3d(0, 0, 0);
+	opacity: 0;
+	padding-top: 0 !important;
+}
+
+.img-popup-modal-showing {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+}
+
+.img-popup-body-mask {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #000;
+	opacity: .8;
+	-webkit-transition: .3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	-moz-transition: .3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.img-popup-body-mask.fade-out {
+	opacity: 0;
+}
+
+a.popup-next, a.popup-previous, a.popup-close {
+	position: fixed;
+	top: 50%;
+	margin-top: 0px;
+	height: 44px;
+	width: 27px;
+	font-size: 20px;
+	color: white;
+	font-weight: 300;
+	cursor: pointer;
+	opacity: .7;
+	z-index: 60000;
+}
+
+a.popup-next:hover, a.popup-previous:hover, a.popup-close:hover {
+	text-decoration: none;
+}
+
+a.popup-next {
+	right: 20px;
+}
+
+a.popup-close {
+	top: 20px;
+	right: 20px;
+	font-size: 20px;
+}
+
+a.popup-previous {
+	left: 20px;
+}
+
+a.popup-previous:hover, a.popup-next:hover, a.popup-close:hover {
+	opacity: 1;
+}
+
+div.popup-loading {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -16px;
+	margin-top: -16px;
+	width: 32px;
+	height: 32px;
+	z-index: 5004;
+	opacity: 0;
+	-webkit-transition: opacity 100ms linear;
+	-moz-transition: opacity 100ms linear;
+	transition: opacity 100ms linear;
+	*background: url(../img/spinner.gif);
+}
+
+div.popup-loading img {
+	width: 100%;
+}
+
+div.popup-loading.loading {
+	opacity: 1;
+	padding: 0;
+}
+
+.popup-img-container {
+	position: relative;
+}
+
+.popup-img-container img {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.popup-img-description {
+	position: absolute;
+	bottom: -300px;
+	left: 0;
+	right: 0;
+	*height: 100px;
+
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 30px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+}
+
+.img-popup {
+	overflow: hidden;
+}
+
+.popup-img-container:hover .popup-img-description {
+	bottom: 0;
+}
+
+@media (max-width: 767px) {
+	.popup-img-description {
+		top: 100%;
+		bottom: auto;
+		background: none;
+	}
+
+	.popup-img-container {
+		overflow: visible;
+	}
+
+	.popup-img-container:hover .popup-img-description {
+		top: 100%;
+		bottom: auto;
+	}
+
+	.img-popup {
+		overflow: visible;
+	}
+
+	a.popup-next, a.popup-previous {
+		height: 50%;
+		width: 50%;
+		font-size: 20px;
+		top: 50%;
+	}
+
+	a.popup-close {
+		right: 20px;
+		top: 20px;
+	}
+
+	a.popup-next {
+		text-align: right;
+	}
+}
+
+}
+
+/* Standard */
+.right-align, .align-right {
+	text-align: right;
+}
+
+.center-align, .align-center {
+	text-align: center;
+}
+
+.serif {
+	font-family: Georgia, serif;
+}
+
+/* collapsing */
+
+.jk-collapse.collapsed {
+	min-height: 1%;
+	max-height: 1px;
+}
+
+.jk-collapse {
+	overflow: hidden;
+	height: auto;
+	min-height: 100%;
+	max-height: 9999px;
+	-webkit-transition: 300ms max-height ease;
+	-moz-transition: 300ms max-height ease;
+}
+
+/*default */
+
+img {
+	max-width: 100%;
+}
+
+/* some frontend editing stuff */
+.image-placeholder {
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 28px;
+	line-height: 1.5;
+	padding: 30px;
+	color: #eee;
+	border: 5px dashed #eee;
+	padding: 30px;
+	-webkit-transition: all 200ms linear;
+	-moz-transition: all 200ms linear;
+}
+
+.loading {
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 28px;
+	line-height: 1.5;
+	padding: 30px;
+	color: #aaa;
+	*border: 5px dashed #aaa;
+}
+
+.loading .progress .bar {
+	background: #eee;
+	background-image: none;
+	border-bottom: none;
+}
+
+.image-placeholder.over {
+	color: #aaa;
+	border: 5px dashed #aaa;
+}
+
+[data-part-type="image"] img.over, [data-part-type="gallery"] img.over {
+	-webkit-transition: all 200ms linear;
+	-moz-transition: all 200ms linear;
+}
+
+[data-part-type="image"] img.over, [data-part-type="gallery"] img.over {
+	opacity: 0.5;
+}
+
+.display-none {
+	display: none;
+}
+
+/* forms */
+.form-group .help-block {
+	display: none !important;
+}
+
+@charset "UTF-8";
+/*
+ * blueimp Gallery CSS 2.11.1
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.blueimp-gallery,
+.blueimp-gallery > .slides > .slide > .slide-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/* Prevent artifacts in Mozilla Firefox: */
+	-moz-backface-visibility: hidden;
+}
+
+.blueimp-gallery > .slides > .slide > .slide-content {
+	margin: auto;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	opacity: 1;
+}
+
+@media screen and (min-width: 900px) {
+
+	.blueimp-gallery > .slides > .slide > .slide-content {
+		max-width: 85%;
+		max-height: 85%;
+	}
+}
+
+.blueimp-gallery {
+	position: fixed;
+	z-index: 999999;
+	overflow: hidden;
+	background: #000;
+	background: rgba(0, 0, 0, 0.9);
+	opacity: 0;
+	display: none;
+	direction: ltr;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.blueimp-gallery-carousel {
+	position: relative;
+	z-index: auto;
+	margin: 1em auto;
+	/* Set the carousel width/height ratio to 16/9: */
+	padding-bottom: 56.25%;
+	box-shadow: 0 0 10px #000;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+}
+
+.blueimp-gallery-display {
+	display: block;
+	opacity: 1;
+}
+
+.blueimp-gallery > .slides {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+.blueimp-gallery-carousel > .slides {
+	position: absolute;
+}
+
+.blueimp-gallery > .slides > .slide {
+	position: relative;
+	float: left;
+	height: 100%;
+	text-align: center;
+	-webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	-moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	-ms-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	-o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.blueimp-gallery,
+.blueimp-gallery > .slides > .slide > .slide-content {
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+}
+
+.blueimp-gallery > .slides > .slide-loading {
+	background: url(../img/loading.gif) center no-repeat;
+	background-size: 32px 32px;
+}
+
+.blueimp-gallery > .slides > .slide-loading > .slide-content {
+	opacity: 0;
+}
+
+.blueimp-gallery > .slides > .slide-error {
+	background: url('../img/error.png') center no-repeat;
+}
+
+.blueimp-gallery > .slides > .slide-error > .slide-content {
+	display: none;
+}
+
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	width: 40px;
+	height: 40px;
+	margin-top: -23px;
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 30px;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 0 2px #000;
+	text-align: center;
+	opacity: 0.5;
+	cursor: pointer;
+	display: none;
+}
+
+.blueimp-gallery > .next {
+	left: auto;
+	right: 15px;
+}
+
+.blueimp-gallery > .close,
+.blueimp-gallery > .title {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	margin: 0 40px 0 0;
+	font-size: 20px;
+	line-height: 30px;
+	color: #fff;
+	text-shadow: 0 0 2px #000;
+	opacity: 0.8;
+	display: none;
+	font-weight: 500;
+}
+
+.blueimp-gallery > .title {
+	bottom: 15px;
+	left: 15px;
+	right: 15px;
+	text-align: center;
+	top: auto;
+	font-size: 18px;
+}
+
+.blueimp-gallery > .close {
+	padding: 15px;
+	right: 15px;
+	left: auto;
+	margin: -15px;
+	font-size: 30px;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.blueimp-gallery > .play-pause {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	width: 15px;
+	height: 15px;
+	background: url(../img/play-pause.png) 0 0 no-repeat;
+	cursor: pointer;
+	opacity: 0.5;
+	display: none;
+}
+
+.blueimp-gallery-playing > .play-pause {
+	background-position: -15px 0;
+}
+
+.blueimp-gallery > .prev:hover,
+.blueimp-gallery > .next:hover,
+.blueimp-gallery > .close:hover,
+.blueimp-gallery > .title:hover,
+.blueimp-gallery > .play-pause:hover {
+	color: #fff;
+	opacity: 1;
+}
+
+.blueimp-gallery-controls > .prev,
+.blueimp-gallery-controls > .next,
+.blueimp-gallery-controls > .close,
+.blueimp-gallery-controls > .title,
+.blueimp-gallery-controls > .play-pause {
+	display: block;
+	/* Fix z-index issues (controls behind slide element) on Android: */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.blueimp-gallery-single > .prev,
+.blueimp-gallery-left > .prev,
+.blueimp-gallery-single > .next,
+.blueimp-gallery-right > .next,
+.blueimp-gallery-single > .play-pause {
+	display: none;
+}
+
+.blueimp-gallery > .slides > .slide > .slide-content,
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next,
+.blueimp-gallery > .close,
+.blueimp-gallery > .play-pause {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Replace PNGs with SVGs for capable browsers (excluding IE<9) */
+body:last-child .blueimp-gallery > .slides > .slide-error {
+	background-image: url(../img/error.svg);
+}
+
+body:last-child .blueimp-gallery > .play-pause {
+	width: 20px;
+	height: 20px;
+	background-size: 40px 20px;
+	background-image: url(../img/play-pause.svg);
+}
+
+body:last-child .blueimp-gallery-playing > .play-pause {
+	background-position: -20px 0;
+}
+
+/* IE7 fixes */
+* + html .blueimp-gallery > .slides > .slide {
+	min-height: 300px;
+}
+
+* + html .blueimp-gallery > .slides > .slide > .slide-content {
+	position: relative;
+}
+
+@charset "UTF-8";
+/*
+ * blueimp Gallery Indicator CSS 1.1.0
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.blueimp-gallery > .indicator {
+	position: absolute;
+	top: auto;
+	right: 15px;
+	bottom: 15px;
+	left: 15px;
+	margin: 0 40px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	line-height: 10px;
+	display: none;
+}
+
+.blueimp-gallery > .indicator > li {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	margin: 6px 3px 0 3px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	border: 1px solid transparent;
+	background: #ccc;
+	background: rgba(255, 255, 255, 0.25) center no-repeat;
+	border-radius: 5px;
+	box-shadow: 0 0 2px #000;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.blueimp-gallery > .indicator > li:hover,
+.blueimp-gallery > .indicator > .active {
+	background-color: #fff;
+	border-color: #fff;
+	opacity: 1;
+}
+
+.blueimp-gallery-controls > .indicator {
+	display: block;
+	/* Fix z-index issues (controls behind slide element) on Android: */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.blueimp-gallery-single > .indicator {
+	display: none;
+}
+
+.blueimp-gallery > .indicator {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* IE7 fixes */
+* + html .blueimp-gallery > .indicator > li {
+	display: inline;
+}
+
+@charset "UTF-8";
+/*
+ * blueimp Gallery Video Factory CSS 1.3.0
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.blueimp-gallery > .slides > .slide > .video-content > img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	/* Prevent artifacts in Mozilla Firefox: */
+	-moz-backface-visibility: hidden;
+}
+
+.blueimp-gallery > .slides > .slide > .video-content > video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.blueimp-gallery > .slides > .slide > .video-content > iframe {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.blueimp-gallery > .slides > .slide > .video-playing > iframe {
+	top: 0;
+}
+
+.blueimp-gallery > .slides > .slide > .video-content > a {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	margin: -64px auto 0;
+	width: 128px;
+	height: 128px;
+	background: url(../img/video-play.png) center no-repeat;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.blueimp-gallery > .slides > .slide > .video-content > a:hover {
+	opacity: 1;
+}
+
+.blueimp-gallery > .slides > .slide > .video-playing > a,
+.blueimp-gallery > .slides > .slide > .video-playing > img {
+	display: none;
+}
+
+.blueimp-gallery > .slides > .slide > .video-content > video {
+	display: none;
+}
+
+.blueimp-gallery > .slides > .slide > .video-playing > video {
+	display: block;
+}
+
+.blueimp-gallery > .slides > .slide > .video-loading > a {
+	background: url(../img/loading.gif) center no-repeat;
+	background-size: 30px 30px;
+}
+
+/* Replace PNGs with SVGs for capable browsers (excluding IE<9) */
+body:last-child .blueimp-gallery > .slides > .slide > .video-content:not(.video-loading) > a {
+	background-image: url(../img/video-play.svg);
+}
+
+/* IE7 fixes */
+* + html .blueimp-gallery > .slides > .slide > .video-content {
+	height: 100%;
+}
+
+* + html .blueimp-gallery > .slides > .slide > .video-content > a {
+	left: 50%;
+	margin-left: -64px;
+}

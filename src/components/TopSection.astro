@@ -1,0 +1,39 @@
+---
+import site from '../data/site.json';
+const a = site.address;
+---
+<div class="front-section top" id="top-section">
+  <div class="top-vertical-center">
+    <div class="row centered justify-content-md-center" style="text-align: right;">
+      <div class="col-6 top-col">
+        <img id="logo" src="/public/img/logo.svg" alt="Logo" onClick="enterPage();" style="outline: none;">
+      </div>
+      <div class="col-6 top-col"></div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-6 top-col"></div>
+      <div class="col-6 top-col">
+        <div class="top-text">
+          <h4>{a.company}</h4>
+          <a href={a.mapsUrl} target="_blank">
+            <h4>{a.street}<br>{a.city}</h4>
+            <h4></h4>
+          </a> <br> <br> <br> <br>
+
+          <a href={`tel:${a.phone}`}>
+            <h4>{a.phone}</h4>
+          </a>
+          <br>
+          <a href={`mailto:${a.email}`}>
+            <h4>{a.email}</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center top-arrow" id="toparrow">
+    <img id="arrowDown" onClick="enterPage();" src="/public/img/arrow_down.svg" alt="Logo" width="25" style="outline: none; cursor: pointer;">
+  </div>
+</div>

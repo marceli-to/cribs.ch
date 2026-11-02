@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import Footer from './Footer.astro';
+
+interface Props {
+  slug: string;
+  title: string;
+  description: string;
+  keywords: string;
+  pageId: number;
+  content: string;
+}
+const { slug, content, ...meta } = Astro.props;
+---
+<Base {...meta}>
+  <div class="transparent-link" id="topscrollelement">
+    <div class="base" id="base">
+      <div class="project-exit" onclick={`backToProjects('${slug}');`}>
+        <img src="/public/img/close_button_black.svg" alt="Close" width="15" style="cursor: pointer;" />
+      </div>
+
+      <div class="project" set:html={content} />
+    </div>
+  </div>
+
+  <Footer />
+</Base>

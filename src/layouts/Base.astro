@@ -1,0 +1,80 @@
+---
+import site from '../data/site.json';
+
+interface Props {
+  title: string;
+  description: string;
+  keywords: string;
+  pageId: number;
+  canonical?: string;
+}
+
+const { title, description, keywords, pageId, canonical } = Astro.props;
+const v = site.assetVersion;
+---
+<!DOCTYPE html>
+<html lang={site.lang}>
+  <head>
+    <meta charset="utf-8">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+    <meta name="keywords" content={keywords}>
+    <meta name="author" content={site.author}>
+    <meta name="content-language" content={site.lang}>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    {canonical && <link rel="canonical" href={new URL(canonical, Astro.site).href}>}
+
+    <link href="/public/css/jkweb.startup.css" rel="stylesheet">
+    <link href="/public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href={`/public/css/screen.css?v=${v}`} rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+
+    <link rel="shortcut icon" href="/public/img/logo.svg">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${site.googleAnalyticsId}`}></script>
+    <script is:inline define:vars={{ gaId: site.googleAnalyticsId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gaId);
+    </script>
+
+    <meta name="google-site-verification" content={site.googleSiteVerification} />
+  </head>
+  <body id="mainbody" data-page-id={pageId}>
+    <script is:inline> document.body.className = 'fade'; </script>
+
+    <slot />
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+      <div class="slides"></div>
+      <h3 class="title">_</h3>
+      <a class="prev"><i class="fal fa-chevron-left"></i></a>
+      <a class="next"><i class="fal fa-chevron-right"></i></a>
+      <a class="close"><i class="fal fa-times"></i></a>
+    </div>
+
+    <script is:inline>
+      const URL_PUBLIC = '/';
+    </script>
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", function(e) {
+        document.body.className = '';
+      });
+    </script>
+
+    <script is:inline src="/public/js/jquery-3.3.1.min.js"></script>
+    <script is:inline src="/public/js/popper.min.js"></script>
+    <script is:inline src="/public/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script is:inline src="/public/js/bootstrapvalidator.js"></script>
+    <script is:inline src="/public/js/fontawesome-all.min.js"></script>
+    <script is:inline src="/public/js/modernizr.js"></script>
+    <script is:inline src="/public/js/blueimp-gallery.min.js"></script>
+    <script is:inline src="/public/js/jkweb.startup.js"></script>
+    <script is:inline src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script is:inline src={`/public/js/main.js?v=${v}`}></script>
+  </body>
+</html>

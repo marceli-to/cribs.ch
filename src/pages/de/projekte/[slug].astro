@@ -1,0 +1,38 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Footer from '../../../components/Footer.astro';
+import projects from '../../../data/projects.json';
+
+export function getStaticPaths() {
+  return projects.map((project) => ({ params: { slug: project.slug }, props: { project } }));
+}
+
+const { project: p } = Astro.props;
+---
+<Base title={p.title} description={p.description} keywords={p.keywords} pageId={p.pageId}>
+  <div class="transparent-link" data-target={p.slug}>
+    <div>
+      <div class="base" id="base">
+        <div class="project-exit no-hover-links">
+          <a class="" href={`/de/projekte#${p.slug}`}>
+            <img src="/public/img/close_button_black.svg" alt="Close" width="15" style="cursor: pointer;" />
+          </a>
+        </div>
+
+        <div class="project">
+          <h2> {p.heading} </h2>
+          <p> {p.place} </p>
+          <p> {p.category} </p>
+          <br><br>
+          <Fragment set:html={p.intro} />
+
+          {p.images.map((img) => <img class="image-normal" src={img.src} alt={img.alt} />)}
+
+          <Fragment set:html={p.text} />
+        </div>
+      </div>
+    </div>
+
+    <Footer />
+  </div>
+</Base>

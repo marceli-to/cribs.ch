@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import ViewSelect from './ViewSelect.astro';
+import Footer from './Footer.astro';
+import pages from '../data/pages.json';
+
+interface Props {
+  canonical?: string;
+}
+const { canonical } = Astro.props;
+const { buero } = pages;
+---
+<Base title={buero.title} description={buero.description} keywords={buero.keywords} pageId={buero.pageId} canonical={canonical}>
+  <div class="base front-section">
+    <div id="office">
+      <br><br>
+      <ViewSelect active="office" />
+
+      <div class="office-segment">
+        <div>
+          {buero.topImages.map((img) => <img src={img.src} alt={img.alt} />)}
+        </div>
+
+        <Fragment set:html={buero.intro} />
+
+        <br>
+        <div class="team-members">
+          <div class="row">
+            {buero.team.map((m) => (
+              <div class="col-sm-6">
+                <div class="team-member">
+                  <img alt={m.name} src={m.image}>
+                  <div class="overlay">
+                    <div class="overlay-text" set:html={m.bio} />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <br>
+
+        <div>
+          {buero.bottomImages.map((img) => <img src={img.src} alt={img.alt} />)}
+        </div>
+
+        <Fragment set:html={buero.outro} />
+      </div>
+    </div>
+
+    <Footer />
+  </div>
+</Base>

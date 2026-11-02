@@ -1,0 +1,330 @@
+[
+  {
+    "slug": "irringersteig",
+    "col": 4,
+    "marginTop": "0",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/1140/cribs-bolleystrasse45-9-klein@2x.jpg",
+      "alt": "Mehrfamilienhaus Irringersteig"
+    },
+    "title": "Mehrfamilienhaus Irringersteig"
+  },
+  {
+    "slug": "ausbau-cribs",
+    "col": 3,
+    "marginTop": "0",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/908/modell-01a@2x.jpg",
+      "alt": "Ausbau cribs"
+    },
+    "title": "Ausbau cribs"
+  },
+  {
+    "slug": "lehrerhuesli",
+    "col": 5,
+    "marginTop": "",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/953/lehrerhuesli-00@2x.jpg",
+      "alt": "Lehrerhüsli"
+    },
+    "title": "Lehrerhüsli"
+  },
+  {
+    "slug": "haus-w",
+    "col": 6,
+    "marginTop": "-9",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/554/perspektive@2x.jpg",
+      "alt": "Haus W"
+    },
+    "title": "Haus W"
+  },
+  {
+    "slug": "kita-haldenbach",
+    "col": 6,
+    "marginTop": "5",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/1006/hal06@2x.jpg",
+      "alt": "Kita Haldenbach"
+    },
+    "title": "Kita Haldenbach"
+  },
+  {
+    "slug": "haus-dorfreben",
+    "col": 4,
+    "marginTop": "-16.5",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/1232/haus-dorfreben-06-web@2x.jpg",
+      "alt": "Haus Dorfreben"
+    },
+    "title": "Haus Dorfreben"
+  },
+  {
+    "slug": "eigenheimquartier",
+    "col": 5,
+    "marginTop": "1",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/1060/aussenbild@2x.jpg",
+      "alt": "Haus am Eigenheimweg"
+    },
+    "title": "Haus am Eigenheimweg"
+  },
+  {
+    "slug": "kita-tierspital",
+    "col": 3,
+    "marginTop": "1",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/1251/2024-cribs-kita-csven-hoegger-8-quadrat@2x.jpg",
+      "alt": "Kita Tierspital"
+    },
+    "title": "Kita Tierspital"
+  },
+  {
+    "slug": "wohnungen-bolley",
+    "col": 4,
+    "marginTop": "-20",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/1258/bol-40-10e@2x.jpg",
+      "alt": "Wohnungen Bolleystrasse"
+    },
+    "title": "Wohnungen Bolleystrasse"
+  },
+  {
+    "spacer": true,
+    "col": 2
+  },
+  {
+    "slug": "stoeckli",
+    "col": 6,
+    "marginTop": "1",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/1260/fotoarbeit-cribs-wolhusen-8-klein@2x.jpg",
+      "alt": "Stöckli am Chräjebüel"
+    },
+    "title": "Stöckli am Chräjebüel"
+  },
+  {
+    "slug": "anton-higi",
+    "col": 3,
+    "marginTop": "-10",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/1275/start-e@2x.jpg",
+      "alt": "Anton Higi"
+    },
+    "title": "Anton Higi"
+  },
+  {
+    "slug": "sarmenstorf",
+    "col": 4,
+    "marginTop": "0",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/660/startbild-02@2x.jpg",
+      "alt": "Sarmenstorf I"
+    },
+    "title": "Sarmenstorf I"
+  },
+  {
+    "slug": "sectiozimmer-unispital",
+    "col": 5,
+    "marginTop": "22",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/773/2117-120550@2x.jpg",
+      "alt": "Sectiozimmer Unispital"
+    },
+    "title": "Sectiozimmer Unispital"
+  },
+  {
+    "slug": "umbauten-unispital",
+    "col": 6,
+    "marginTop": "5",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/783/19013-01-startbild-fl@2x.jpg",
+      "alt": "Umbauten Unispital"
+    },
+    "title": "Umbauten Unispital"
+  },
+  {
+    "spacer": true,
+    "col": 1
+  },
+  {
+    "slug": "wohnungen-BOL28",
+    "col": 5,
+    "marginTop": "17",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/1179/cribs-bolleystrasse28-23-klein@2x.jpg",
+      "alt": "Wohnungen BOL28"
+    },
+    "title": "Wohnungen BOL28"
+  },
+  {
+    "slug": "uetliburg",
+    "col": 5,
+    "marginTop": "-20",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/810/axonometrie-2@2x.svg",
+      "alt": "Uetliburg"
+    },
+    "title": "Uetliburg"
+  },
+  {
+    "slug": "rohrpost-unispital",
+    "col": 3,
+    "marginTop": "9",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/652/startbild@2x.svg",
+      "alt": "Rohrpost Unispital"
+    },
+    "title": "Rohrpost Unispital"
+  },
+  {
+    "slug": "haeuser-am-chrachen",
+    "col": 4,
+    "marginTop": "2",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/583/v1-1a@2x.jpg",
+      "alt": "Häuser am Chrachen"
+    },
+    "title": "Häuser am Chrachen"
+  },
+  {
+    "slug": "dorfreben",
+    "col": 7,
+    "marginTop": "-30",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/1196/townhouse-dorfreben-16-web@2x.jpg",
+      "alt": "Zeilenhäuser Dorfreben"
+    },
+    "title": "Zeilenhäuser Dorfreben"
+  },
+  {
+    "spacer": true,
+    "col": 5
+  },
+  {
+    "slug": "skihaus-mostelberg",
+    "col": 4,
+    "marginTop": "9",
+    "preview": {
+      "type": "video",
+      "id": "ba0df6924c0fecfc43fbaee71e5c2401",
+      "src": "/download/10/Sattel_Animation_v06_opt4.mp4"
+    },
+    "title": "Skihaus Mostelberg"
+  },
+  {
+    "slug": "bueroausbau-mobimo",
+    "col": 3,
+    "marginTop": "9",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/876/19006-01-startbild@2x.jpg",
+      "alt": "Büroausbau Mattenhof"
+    },
+    "title": "Büroausbau Mattenhof"
+  },
+  {
+    "slug": "kriminalmuseum",
+    "col": 5,
+    "marginTop": "-1",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/1036/empfang-final-2@2x.jpg",
+      "alt": "Kriminalmuseum Zürich"
+    },
+    "title": "Kriminalmuseum Zürich"
+  },
+  {
+    "slug": "Weinbergstrasse",
+    "col": 6,
+    "marginTop": "4",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/806/weinberg-01c@2x.jpg",
+      "alt": "Haus Weinbergstrasse"
+    },
+    "title": "Haus Weinbergstrasse"
+  },
+  {
+    "slug": "schulerweiterung-benken",
+    "col": 6,
+    "marginTop": "-10",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/990/be-02-1@2x.jpg",
+      "alt": "Schulerweiterung Benken"
+    },
+    "title": "Schulerweiterung Benken"
+  },
+  {
+    "spacer": true,
+    "col": 6
+  },
+  {
+    "slug": "zwillingshaus",
+    "col": 5,
+    "marginTop": "-25",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/901/waltenschwil-01@2x.jpg",
+      "alt": "Zwillingshaus am Storchenacher"
+    },
+    "title": "Zwillingshaus am Storchenacher"
+  },
+  {
+    "slug": "kiosk-am-haselwasser",
+    "col": 4,
+    "marginTop": "3",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/889/start@2x.jpg",
+      "alt": "Kiosk am Haselwasser"
+    },
+    "title": "Kiosk am Haselwasser"
+  },
+  {
+    "slug": "karlihof",
+    "col": 3,
+    "marginTop": "11",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/912/h001@2x.jpg",
+      "alt": "Karlihof"
+    },
+    "title": "Karlihof"
+  },
+  {
+    "slug": "haus-fuer-julia",
+    "col": 5,
+    "marginTop": "21.3",
+    "preview": {
+      "type": "image",
+      "src": "/gallery/preview/530/weggis-01@2x.jpg",
+      "alt": "Haus für Julia"
+    },
+    "title": "Haus für Julia"
+  },
+  {
+    "spacer": true,
+    "col": 3
+  }
+]

@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import TopSection from './TopSection.astro';
+import ViewSelect from './ViewSelect.astro';
+import ProjectGrid from './ProjectGrid.astro';
+import Footer from './Footer.astro';
+import pages from '../data/pages.json';
+
+interface Props {
+  /** Home page shows the intro (logo + address) section above the grid. */
+  withTop?: boolean;
+  canonical?: string;
+}
+const { withTop = false, canonical } = Astro.props;
+const meta = withTop ? pages.home : pages.projekte;
+---
+<Base {...meta} canonical={canonical}>
+  {withTop && <TopSection />}
+  <div class="base front-section">
+    <br><br>
+    <ViewSelect active="projects" />
+    <ProjectGrid />
+    <Footer />
+  </div>
+</Base>
